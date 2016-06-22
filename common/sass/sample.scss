@@ -1,0 +1,28 @@
+@import "mixin.scss";
+
+.sample {
+	@include clearfix;
+}
+
+.sample2 {
+	@include btn(#fff, #ccc);
+}
+
+.sample3 {
+	@include btnLine(#444, #fff, #444);
+}
+
+.sample4 {
+	@include boxshadow(#444);
+}
+
+.sample5 {
+	@include btnWidth;
+}
+
+.sample6 {
+	@include btnWidth(200px);
+}
+
+
+@import "base.scss";

@@ -1,0 +1,41 @@
+.sample { zoom: 1; }
+.sample:before, .sample:after { display: block; height: 0; visibility: hidden; content: "\0020"; }
+.sample:after { clear: both; }
+
+.sample2 { color: #fff; background: #ccc; line-height: initial; text-decoration: none; box-sizing: border-box; border-width: 1px; }
+.sample2:hover { background: whitesmoke; cursor: pointer; text-decoration: none; }
+.sample2:active { background: #b9b9b9; }
+
+.sample3 { color: #444; background: #fff; border-color: #444; box-sizing: border-box; border-width: 1px; border-style: solid; text-decoration: none; }
+.sample3:hover { background: white; cursor: pointer; text-decoration: none; }
+.sample3:active { background: #e8e8e8; }
+
+.sample4 { box-shadow: 2px 2px 2px 0 #444; }
+.sample4:hover { box-shadow: 5px 5px 5px 0 #222222; }
+
+.sample5 { width: 100%; }
+
+.sample6 { width: 200px; }
+
+body .mt5 { margin-top: 5px; }
+body .mt10 { margin-top: 10px; }
+body .mr5 { margin-right: 5px; }
+body .mr10 { margin-right: 10px; }
+body .mb5 { margin-bottom: 5px; }
+body .mb10 { margin-bottom: 10px; }
+body .ml5 { margin-left: 5px; }
+body .ml10 { margin-left: 10px; }
+body .pt5 { padding-top: 5px; }
+body .pt10 { padding-top: 10px; }
+body .pr5 { padding-right: 5px; }
+body .pr10 { padding-right: 10px; }
+body .pb5 { padding-bottom: 5px; }
+body .pb10 { padding-bottom: 10px; }
+body .pl5 { padding-left: 5px; }
+body .pl10 { padding-left: 10px; }
+
+.col-2 { width: 50%; }
+.col-3 { width: 33.33333%; }
+.col-4 { width: 20%; }
+.col-5 { width: 20%; }
+.col-6 { width: 16.66667%; }

@@ -1,0 +1,76 @@
+//Image path
+$img-path: "path/images";
+
+//Clearfix
+@mixin clearfix {
+  zoom: 1;
+  &:before,
+  &:after {
+    display: block;
+    height: 0;
+    visibility: hidden;
+    content: "\0020";
+  }
+  &:after {
+		clear: both;
+  }
+}
+
+@mixin hide-text{
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+}
+
+// Button Color - Default
+@mixin btn($font-color, $bg-color) {
+  color: $font-color;
+  background: $bg-color;
+  line-height: initial;
+  text-decoration: none;
+  box-sizing: border-box;
+  border-width: 1px;
+  &:hover {
+    background: ($bg-color * 1.2);
+    cursor: pointer;
+    text-decoration: none;
+	}
+	&:active {
+		background: ($bg-color / 1.1);
+	}
+}
+
+// Button Color - Line
+@mixin btnLine($font-color, $bg-color, $line-color) {
+  color: $font-color;
+  background: $bg-color;
+  border-color: $line-color;
+  box-sizing: border-box;
+  // line-height: 1;
+  border-width: 1px;
+  border-style: solid;
+  // box-shadow: 0 10px 0 0 ($background / 2) inset;
+  text-decoration: none;
+  &:hover {
+    background: ($bg-color * 1.2);
+    cursor: pointer;
+    text-decoration: none;
+	}
+	&:active {
+		background: ($bg-color / 1.1);
+	}
+}
+
+// Box Shadow
+@mixin boxshadow($background) {
+  box-shadow: 2px 2px 2px 0 ($background);
+  &:hover {
+    // background: ($background / 1.2);
+    box-shadow: 5px 5px 5px 0 ($background / 2);
+	}
+}
+
+// Button Width
+@mixin btnWidth($buttonWidth: 100%) {
+    width: $buttonWidth;
+}
